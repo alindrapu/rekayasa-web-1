@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan Tiket Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4 shadow" style="max-width: 500px; width: 100%;">
+      <h3 class="text-center mb-4">Form Pemesanan Tiket</h3>
+      <form>
+        <div class="mb-3">
+          <label for="tanggal" class="form-label">Tanggal Pemesanan</label>
+          <input type="date" class="form-control" id="tanggal" required>
+          <div class="invalid-feedback">Harap pilih tanggal pemesanan.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="jumlahTiket" class="form-label">Jumlah Tiket</label>
+          <input type="number" class="form-control" id="jumlahTiket" min="1" max="10" value="1" required>
+          <div class="invalid-feedback">Harap pilih jumlah tiket (1-10).</div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+          <label class="form-check-label" for="agreeTerms">Saya setuju dengan syarat dan ketentuan</label>
+          <div class="invalid-feedback">Anda harus setuju dengan syarat dan ketentuan.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Pesan Tiket</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
